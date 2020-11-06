@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+jar {
+    manifest {
+        attributes(
+                'Main-Class': ''
+        )
+    }
+}
+
+group 'com.minecraftnoob.elliot'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'net.dv8tion:JDA:4.0.0_56'
+}
+
+compileJava.options.encoding = 'UTF-8'

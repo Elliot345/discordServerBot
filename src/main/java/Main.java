@@ -11,7 +11,7 @@ public class Main {
     public static JDA jda;
 
     public static void main(String[] args) throws LoginException {
-        jda = new JDABuilder(AccountType.BOT).setToken("Nzc0MDU2OTU1NTg4Mzc4Njc1.X6SOtw.gNZ20alwYR4C7Lz4UrjKxjfwjbU").build();
+        jda = new JDABuilder(AccountType.BOT).setToken("token").build();
         jda.getPresence().setStatus(OnlineStatus.IDLE);
 
         jda.addEventListener(new commands());
